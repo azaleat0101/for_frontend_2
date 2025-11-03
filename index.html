@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тухватуллина Азалия | Личный сайт</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>Тухватуллина Азалия</h1>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="nav__link active">Главная</a>
+                <a href="pages/projects.html" class="nav__link">Проекты</a>
+                <a href="pages/diary.html" class="nav__link">Дневник</a>
+                <a href="pages/contacts.html" class="nav__link">Контакты</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Герой секция -->
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__image">
+                    <img src="images/author_photo.jpg" alt="Фото автора" id="student-photo">
+                </div>
+                <div class="hero__content">
+                    <h1 class="hero__title">Привет! Я - Азалия</h1>
+                    <p class="hero__subtitle">Студентка РТУ МИРЭА, направление "Фуллстек-разработка", группа ЭФБО-02-24</p>
+                    <p class="hero__description">Увлекаюсь веб-разработкой, изучаю современные технологии и создаю интересные проекты.</p>
+                    <a href="assets/resume.pdf" class="button button--primary" download>
+                        <span>Скачать резюме</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция навыков -->
+        <section class="skills section">
+            <div class="container">
+                <h2 class="section__title">Мои навыки</h2>
+                <div class="skills__grid">
+                    <div class="skill">
+                        <div class="skill__header">
+                            <span class="skill__name">HTML/CSS</span>
+                            <span class="skill__percentage">90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__progress" data-width="90"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__header">
+                            <span class="skill__name">JavaScript</span>
+                            <span class="skill__percentage">80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__header">
+                            <span class="skill__name">Bootstrap</span>
+                            <span class="skill__percentage">65%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__progress" data-width="65"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__header">
+                            <span class="skill__name">Python</span>
+                            <span class="skill__percentage">80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__progress" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__header">
+                            <span class="skill__name">Git</span>
+                            <span class="skill__percentage">75%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__progress" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__header">
+                            <span class="skill__name">Figma</span>
+                            <span class="skill__percentage">80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__progress" data-width="80"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Секция лучших проектов -->
+        <section class="projects-preview section">
+            <div class="container">
+                <h2 class="section__title">Лучшие проекты</h2>
+                <div class="projects__grid">
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="../images/wrap_4.jpg" alt="Фото проекта личного сайта">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Личный сайт</h3>
+                            <p class="project-card__description">Адаптивный сайт-портфолио, созданный с использованием HTML/CSS и JS</p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JS</span>
+                            </div>
+                            <a href="pages/projects.html#project4" class="project-card__link">Подробнее</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="../images/wrap_5.jpg" alt="Фото проекта 'Моя база данных'">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">"Моя база данных"</h3>
+                            <p class="project-card__description">Настольное приложение с GUI, взаимодействующее с БД PostgreSQL</p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PySide6</span>
+                                <span class="tech-tag">psycopg2</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <a href="pages/projects.html#project5" class="project-card__link">Подробнее</a>
+                            
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="../images/wrap_2.jpg" alt="Фото проекта методички первокурсника">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Методичка первокурсника</h3>
+                            <p class="project-card__description">Дизайн-проект методички для первокурсников, проживающих в 5-ом общежитии РТУ МИРЭА</p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">Figma</span>
+                            </div>
+                            <a href="pages/projects.html#project2" class="project-card__link">Подробнее</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="projects-preview__footer">
+                    <a href="pages/projects.html" class="button button--secondary">Все проекты</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 Тухватуллина Азалия. Все права защищены.</p>
+                <div class="footer__contacts">
+                    <a href="mailto:azaleatukhvat@gmail.com" class="contact-link">
+                        <img src="images/icons/alternate_email.svg" alt="Email">
+                        azaleatukhvat@gmail.com
+                    </a>
+                    <a href="https://github.com/azaleat0101" class="contact-link" target="_blank">
+                        <img src="images/icons/github-mark-white.svg" alt="GitHub">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

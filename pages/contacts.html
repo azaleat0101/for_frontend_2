@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Тухватуллина Азалия</h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="../index.html" class="nav__link">Главная</a>
+                <a href="projects.html" class="nav__link">Проекты</a>
+                <a href="diary.html" class="nav__link">Дневник</a>
+                <a href="contacts.html" class="nav__link active">Контакты</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="contacts section">
+            <div class="container">
+                <div class="section__header">
+                    <h1 class="section__title">Свяжитесь со мной</h1>
+                    <p class="section__subtitle">Готова к новым проектам и возможностям для сотрудничества</p>
+                </div>
+
+                <div class="contacts__layout">
+                    <!-- Левая колонка - контактная форма -->
+                    <div class="contacts__form">
+                        <h2 class="contacts__subtitle">Напишите мне</h2>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Имя *</label>
+                                <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Тема сообщения</label>
+                                <input type="text" id="subject" name="subject" placeholder="Тема вашего сообщения">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Сообщение *</label>
+                                <textarea id="message" name="message" placeholder="Расскажите о вашем проекте или задайте вопрос..." rows="6" required></textarea>
+                                <span class="error-message" id="message-error"></span>
+                            </div>
+
+                            <button type="submit" class="button button--primary button--full-width">
+                                <span>Отправить сообщение</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Правая колонка - контактная информация -->
+                    <div class="contacts__info">
+                        <h2 class="contacts__subtitle">Контактная информация</h2>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <img src="../images/icons/alternate_email_black.svg" alt="Email">
+                                </div>
+                                <div class="contact-item__content">
+                                    <h3>Email</h3>
+                                    <a href="mailto:student@edu.ru">azaleatukhvat@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <img src="../images/icons/github-mark.svg" alt="GitHub">
+                                </div>
+                                <div class="contact-item__content">
+                                    <h3>GitHub</h3>
+                                    <a href="https://github.com/azaleat0101" target="_blank">github.com/azaleat0101</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-item__icon">
+                                    <img src="../images/icons/place.svg" alt="Местоположение">
+                                </div>
+                                <div class="contact-item__content">
+                                    <h3>Местоположение</h3>
+                                    <span>Москва, Россия</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальное окно успешной отправки -->
+    <div class="modal" id="success-modal">
+        <div class="modal__content modal__content--small">
+            <button class="modal__close" id="success-modal-close">&times;</button>
+            <div class="modal__body text-center">
+                <div class="success-icon">✓</div>
+                <h3>Сообщение отправлено!</h3>
+                <p>Спасибо за ваше сообщение. Я свяжусь с вами в ближайшее время.</p>
+                <button class="button button--primary" id="success-modal-ok">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 Тухватуллина Азалия. Все права защищены.</p>
+                <div class="footer__contacts">
+                    <a href="mailto:azaleatukhvat@gmail.com" class="contact-link">
+                        <img src="../images/icons/alternate_email.svg" alt="Email">
+                        azaleatukhvat@gmail.com
+                    </a>
+                    <a href="https://github.com/azaleat0101" class="contact-link" target="_blank">
+                        <img src="../images/icons/github-mark-white.svg" alt="GitHub">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/form-validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты | Азалия Тухватуллина</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html" style="text-decoration: none; color: inherit;">
+                    <h1>Тухватуллина Азалия</h1>
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="../index.html" class="nav__link">Главная</a>
+                <a href="projects.html" class="nav__link active">Проекты</a>
+                <a href="diary.html" class="nav__link">Дневник</a>
+                <a href="contacts.html" class="nav__link">Контакты</a>
+            </nav>
+            <button class="mobile-menu-btn" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="projects section">
+            <div class="container">
+                <div class="section__header">
+                    <h1 class="section__title">Мои проекты</h1>
+                    <p class="section__subtitle">Здесь собраны все мои учебные и личные проекты</p>
+                </div>
+
+                <!-- Фильтры -->
+                <div class="projects__filters">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="html">HTML/CSS</button>
+                    <button class="filter-btn" data-filter="cplusplus">C++</button>
+                    <button class="filter-btn" data-filter="winapi">WinAPI</button>
+                    <button class="filter-btn" data-filter="js">JS</button>
+                    <button class="filter-btn" data-filter="figma">Figma</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="postgres">PostgreSQL</button>
+                </div>
+
+                <!-- Сетка проектов -->
+                <div class="projects__grid" id="projects-grid">
+                    <!-- Проект 1 -->
+                    <article class="project-card" data-categories="figma" id="project1">
+                        <div class="project-card__image">
+                            <img src="../images/wrap_1.jpg" alt="Фото проекта родословной">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">"Моя родословная"</h3>
+                            <p class="project-card__description">Коммерческий дизайн-проект родословной по готовому древу</p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">Figma</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <button class="button button--small view-details" data-project="1">Подробнее</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Проект 2 -->
+                    <article class="project-card" data-categories="figma" id="project2">
+                        <div class="project-card__image">
+                            <img src="../images/wrap_2.jpg" alt="Фото проекта методички первокурсника">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Методичка первокурсника</h3>
+                            <p class="project-card__description">Дизайн-проект методички для первокурсников, проживающих в 5-ом общежитии РТУ МИРЭА</p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">Figma</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <button class="button button--small view-details" data-project="2">Подробнее</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Проект 3 -->
+                    <article class="project-card" data-categories="cplusplus winapi" id="project3">
+                        <div class="project-card__image">
+                            <img src="../images/wrap_3.jpg" alt="Фото проекта конвертера валют">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Конвертер валют</h3>
+                            <p class="project-card__description">Кроссплатформенное приложение на C++ и WinAPI</p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">WinAPI</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <button class="button button--small view-details" data-project="3">Подробнее</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Проект 4 -->
+                    <article class="project-card" data-categories="html css js" id="project4">
+                        <div class="project-card__image">
+                            <img src="../images/wrap_4.jpg" alt="Фото проекта личного сайта">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">Личный сайт</h3>
+                            <p class="project-card__description">Адаптивный сайт-портфолио, созданный с использованием HTML/CSS и JS</p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JS</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <button class="button button--small view-details" data-project="4">Подробнее</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Проект 5 -->
+                    <article class="project-card" data-categories="python postgres" id="project5">
+                        <div class="project-card__image">
+                            <img src="../images/wrap_5.jpg" alt="Фото проекта 'Моя база данных'">
+                        </div>
+                        <div class="project-card__content">
+                            <h3 class="project-card__title">"Моя база данных"</h3>
+                            <p class="project-card__description">Настольное приложение с GUI, взаимодействующее с БД PostgreSQL</p>
+                            <div class="project-card__tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PySide6</span>
+                                <span class="tech-tag">psycopg2</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                            <div class="project-card__actions">
+                                <button class="button button--small view-details" data-project="5">Подробнее</button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Модальное окно для деталей проекта -->
+    <div class="modal" id="project-modal">
+        <div class="modal__content">
+            <button class="modal__close" id="modal-close">&times;</button>
+            <div class="modal__body" id="modal-body">
+                <!-- Контент будет загружен через JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p>&copy; 2025 Тухватуллина Азалия. Все права защищены.</p>
+                <div class="footer__contacts">
+                    <a href="mailto:azaleatukhvat@gmail.com" class="contact-link">
+                        <img src="../images/icons/alternate_email.svg" alt="Email">
+                        azaleatukhvat@gmail.com
+                    </a>
+                    <a href="https://github.com/azaleat0101" class="contact-link" target="_blank">
+                        <img src="../images/icons/github-mark-white.svg" alt="GitHub">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+    <script src="../scripts/filters.js"></script>
+    <script src="../scripts/modal.js"></script>
+</body>
+</html>
