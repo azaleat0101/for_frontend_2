@@ -53,7 +53,13 @@
                     <!-- Проект 1 -->
                     <article class="project-card" data-categories="figma" id="project1">
                         <div class="project-card__image">
-                            <img src="../images/wrap_1.jpg" alt="Фото проекта родословной">
+                            <picture>
+                                <source srcset="../images/wrap_1.webp" type="image/webp">
+                                <img src="../images/wrap_1.jpg" 
+                                    alt="Фото проекта родословной"
+                                    class="responsive-image"
+                                    loading="lazy">
+                            </picture>
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">"Моя родословная"</h3>
@@ -70,7 +76,13 @@
                     <!-- Проект 2 -->
                     <article class="project-card" data-categories="figma" id="project2">
                         <div class="project-card__image">
-                            <img src="../images/wrap_2.jpg" alt="Фото проекта методички первокурсника">
+                            <picture>
+                                <source srcset="../images/wrap_2.webp" type="image/webp">
+                                <img src="../images/wrap_2.jpg" 
+                                    alt="Фото проекта методички"
+                                    class="responsive-image"
+                                    loading="lazy">
+                            </picture>
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">Методичка первокурсника</h3>
@@ -87,7 +99,13 @@
                     <!-- Проект 3 -->
                     <article class="project-card" data-categories="cplusplus winapi" id="project3">
                         <div class="project-card__image">
-                            <img src="../images/wrap_3.jpg" alt="Фото проекта конвертера валют">
+                            <picture>
+                                <source srcset="../images/wrap_3.webp" type="image/webp">
+                                <img src="../images/wrap_3.jpg" 
+                                    alt="Фото проекта конвертера валют"
+                                    class="responsive-image"
+                                    loading="lazy">
+                            </picture>
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">Конвертер валют</h3>
@@ -105,7 +123,13 @@
                     <!-- Проект 4 -->
                     <article class="project-card" data-categories="html css js" id="project4">
                         <div class="project-card__image">
-                            <img src="../images/wrap_4.jpg" alt="Фото проекта личного сайта">
+                            <picture>
+                                <source srcset="../images/wrap_4.webp" type="image/webp">
+                                <img src="../images/wrap_4.jpg" 
+                                    alt="Фото проекта сайта"
+                                    class="responsive-image"
+                                    loading="lazy">
+                            </picture>
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">Личный сайт</h3>
@@ -124,7 +148,13 @@
                     <!-- Проект 5 -->
                     <article class="project-card" data-categories="python postgres" id="project5">
                         <div class="project-card__image">
-                            <img src="../images/wrap_5.jpg" alt="Фото проекта 'Моя база данных'">
+                            <picture>
+                                <source srcset="../images/wrap_5.webp" type="image/webp">
+                                <img src="../images/wrap_5.jpg" 
+                                    alt="Фото проекта приложения БД"
+                                    class="responsive-image"
+                                    loading="lazy">
+                            </picture>
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">"Моя база данных"</h3>
@@ -161,11 +191,17 @@
                 <p>&copy; 2025 Тухватуллина Азалия. Все права защищены.</p>
                 <div class="footer__contacts">
                     <a href="mailto:azaleatukhvat@gmail.com" class="contact-link">
-                        <img src="../images/icons/alternate_email.svg" alt="Email">
+                        <img src="images/icons/alternate_email.svg" 
+                            srcset="images/icons/alternate_email.svg 1x, images/icons/alternate_email@2x.svg 2x"
+                            alt="Email"
+                            class="retina-image">
                         azaleatukhvat@gmail.com
                     </a>
                     <a href="https://github.com/azaleat0101" class="contact-link" target="_blank">
-                        <img src="../images/icons/github-mark-white.svg" alt="GitHub">
+                        <img src="images/icons/github-mark-white.svg"
+                            srcset="images/icons/github-mark-white.svg 1x, images/icons/github-mark-white@2x.svg 2x" 
+                            alt="GitHub"
+                            class="retina-image">
                         GitHub
                     </a>
                 </div>

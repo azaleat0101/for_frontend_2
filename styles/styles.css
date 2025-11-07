@@ -1,4 +1,3 @@
-/* Reset и базовые стили */
 * {
     margin: 0;
     padding: 0;
@@ -1049,7 +1048,6 @@ input:valid, textarea:valid {
     border-color: var(--success-color);
 }
 
-/* Анимации для проектов */
 .project-card {
     transition: all 0.3s ease;
 }
@@ -1208,7 +1206,6 @@ input:valid, textarea:valid {
     }
 }
 
-/* Утилиты */
 .text-center {
     text-align: center;
 }
@@ -1217,13 +1214,71 @@ input:valid, textarea:valid {
     display: none !important;
 }
 
-/* Анимация для записей при загрузке */
 .entry {
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Дополнительные стили для модального окна-заглушки */
 .stub-icon {
     font-size: 4rem;
     margin-bottom: 1rem;
+}
+
+.responsive-image {
+    width: 100%;      
+    height: auto;     
+    display: block;   
+}
+
+/* Object-fit свойства для контроля заполнения */
+.object-fit-cover { 
+    object-fit: cover;   
+}
+
+.object-fit-contain { 
+    object-fit: contain;  
+}
+
+.object-fit-fill { 
+    object-fit: fill;     
+}
+
+/* Поддержка Retina display */
+.retina-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+@media (max-width: 768px) {
+    .projects__grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .projects__grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+@media (prefers-reduced-data: reduce) {
+    .project-card__image img {
+        filter: blur(0.5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero__container {
+        text-align: center;  
+    }
+    
+    .hero__image {
+        order: -1; 
+        margin-bottom: 2rem;
+    }
+    
+    .hero__image img {
+        display: block;
+        margin: 0 auto;
+    }
 }

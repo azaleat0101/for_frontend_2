@@ -73,11 +73,15 @@
                     <!-- Правая колонка - контактная информация -->
                     <div class="contacts__info">
                         <h2 class="contacts__subtitle">Контактная информация</h2>
-                        
                         <div class="contact-info">
                             <div class="contact-item">
                                 <div class="contact-item__icon">
-                                    <img src="../images/icons/alternate_email_black.svg" alt="Email">
+                                    <picture>
+                                        <source srcset="../images/icons/alternate_email_black.webp" type="image/webp">
+                                        <img src="../images/icons/alternate_email_black.svg" 
+                                            alt="Email"
+                                            class="responsive-image retina-image">
+                                    </picture>
                                 </div>
                                 <div class="contact-item__content">
                                     <h3>Email</h3>
@@ -87,7 +91,12 @@
 
                             <div class="contact-item">
                                 <div class="contact-item__icon">
-                                    <img src="../images/icons/github-mark.svg" alt="GitHub">
+                                    <picture>
+                                        <source srcset="../images/icons/github-mark.webp" type="image/webp">
+                                        <img src="../images/icons/github-mark.svg" 
+                                            alt="GitHub"
+                                            class="responsive-image retina-image">
+                                    </picture>
                                 </div>
                                 <div class="contact-item__content">
                                     <h3>GitHub</h3>
@@ -97,7 +106,12 @@
 
                             <div class="contact-item">
                                 <div class="contact-item__icon">
-                                    <img src="../images/icons/place.svg" alt="Местоположение">
+                                    <picture>
+                                        <source srcset="../images/icons/place.webp" type="image/webp">
+                                        <img src="../images/icons/place.svg" 
+                                            alt="Местоположение"
+                                            class="responsive-image retina-image">
+                                    </picture>
                                 </div>
                                 <div class="contact-item__content">
                                     <h3>Местоположение</h3>
@@ -130,11 +144,17 @@
                 <p>&copy; 2025 Тухватуллина Азалия. Все права защищены.</p>
                 <div class="footer__contacts">
                     <a href="mailto:azaleatukhvat@gmail.com" class="contact-link">
-                        <img src="../images/icons/alternate_email.svg" alt="Email">
+                        <img src="images/icons/alternate_email.svg" 
+                            srcset="images/icons/alternate_email.svg 1x, images/icons/alternate_email@2x.svg 2x"
+                            alt="Email"
+                            class="retina-image">
                         azaleatukhvat@gmail.com
                     </a>
                     <a href="https://github.com/azaleat0101" class="contact-link" target="_blank">
-                        <img src="../images/icons/github-mark-white.svg" alt="GitHub">
+                        <img src="images/icons/github-mark-white.svg"
+                            srcset="images/icons/github-mark-white.svg 1x, images/icons/github-mark-white@2x.svg 2x" 
+                            alt="GitHub"
+                            class="retina-image">
                         GitHub
                     </a>
                 </div>

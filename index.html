@@ -31,7 +31,13 @@
         <section class="hero">
             <div class="container hero__container">
                 <div class="hero__image">
-                    <img src="images/author_photo.jpg" alt="Фото автора" id="student-photo">
+                    <picture>
+                        <source srcset="images/author_photo.webp" type="image/webp">
+                        <img src="images/author_photo.jpg" 
+                            alt="Фото автора" 
+                            class="responsive-image"
+                            loading="eager">
+                    </picture>
                 </div>
                 <div class="hero__content">
                     <h1 class="hero__title">Привет! Я - Азалия</h1>
@@ -114,7 +120,13 @@
                 <div class="projects__grid">
                     <article class="project-card">
                         <div class="project-card__image">
-                            <img src="images/wrap_4.jpg" alt="Фото проекта личного сайта">
+                            <picture>
+                                <source srcset="images/wrap_4.webp" type="image/webp">
+                                <img src="images/wrap_4.jpg" 
+                                    alt="Фото проекта личного сайта"
+                                    class="responsive-image"
+                                    loading="lazy">
+                            </picture>
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">Личный сайт</h3>
@@ -130,7 +142,13 @@
 
                     <article class="project-card">
                         <div class="project-card__image">
-                            <img src="images/wrap_5.jpg" alt="Фото проекта 'Моя база данных'">
+                            <picture>
+                                <source srcset="images/wrap_5.webp" type="image/webp">
+                                <img src="images/wrap_5.jpg" 
+                                    alt="Фото проекта 'Моя база данных'"
+                                    class="responsive-image"
+                                    loading="lazy">
+                            </picture>
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">"Моя база данных"</h3>
@@ -148,7 +166,13 @@
 
                     <article class="project-card">
                         <div class="project-card__image">
-                            <img src="images/wrap_2.jpg" alt="Фото проекта методички первокурсника">
+                            <picture>
+                                <source srcset="images/wrap_2.webp" type="image/webp">
+                                <img src="images/wrap_2.jpg" 
+                                    alt="Фото проекта методички первокурсника"
+                                    class="responsive-image"
+                                    loading="lazy">
+                            </picture>
                         </div>
                         <div class="project-card__content">
                             <h3 class="project-card__title">Методичка первокурсника</h3>
@@ -173,11 +197,17 @@
                 <p>&copy; 2025 Тухватуллина Азалия. Все права защищены.</p>
                 <div class="footer__contacts">
                     <a href="mailto:azaleatukhvat@gmail.com" class="contact-link">
-                        <img src="images/icons/alternate_email.svg" alt="Email">
+                        <img src="../images/icons/alternate_email.svg" 
+                            srcset="../images/icons/alternate_email.svg 1x, ../images/icons/alternate_email@2x.svg 2x"
+                            alt="Email"
+                            class="retina-image">
                         azaleatukhvat@gmail.com
                     </a>
                     <a href="https://github.com/azaleat0101" class="contact-link" target="_blank">
-                        <img src="images/icons/github-mark-white.svg" alt="GitHub">
+                        <img src="images/icons/github-mark-white.svg"
+                            srcset="images/icons/github-mark-white.svg 1x, images/icons/github-mark-white@2x.svg 2x" 
+                            alt="GitHub"
+                            class="retina-image">
                         GitHub
                     </a>
                 </div>
