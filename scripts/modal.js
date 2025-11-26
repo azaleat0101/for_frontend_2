@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
 function initProjectModals() {
     const viewDetailsButtons = document.querySelectorAll('.view-details');
     const projectModal = document.getElementById('project-modal');
-    const modalClose = document.getElementById('modal-close');
+    const modalClose = document.
+    getElementById('modal-close');
     const modalBody = document.getElementById('modal-body');
     
     if (!projectModal || !modalClose || !modalBody) return;
@@ -26,33 +27,6 @@ function initProjectModals() {
                 "Место для фотографий и документов",
                 "Готовые шаблоны для биографий"
             ],
-            "designElements": {
-                "colorScheme": ["#2C1810", "#8B4513", "#D4AF37", "#F5F5DC"],
-                "fonts": {
-                    "headings": "Playfair Display",
-                    "body": "Cormorant Garamond"
-                },
-                "layout": "Чистая сетка с достаточными полями"
-            },
-            "pages": [
-                "Обложка с названием семьи",
-                "Родословное древо (основная схема)",
-                "Биографии ключевых предков", 
-                "Семейные фотографии и документы",
-                "Заключительная страница"
-            ],
-            "specialFeatures": [
-                "Готовые места для вставки фотографий",
-                "Шаблоны для разных типов информации",
-                "Сбалансированные отступы и интерлиньяж",
-                "Простая навигация по разделам"
-            ],
-            "deliverables": [
-                "Figma файл с макетом книги",
-                "PDF версия для печати",
-                "Инструкция по заполнению",
-                "Примеры заполненных страниц"
-            ],
             "images": ["../images/project_1.jpg"],
             "liveDemo": "#",
             "sourceCode": "https://github.com/azaleat0101/family-tree-simple"
@@ -68,38 +42,6 @@ function initProjectModals() {
                 "Практичные советы и чек-листы",
                 "Карты и схемы кампуса и общежития",
                 "Шаблоны для важных документов и заявлений"
-            ],
-            "designElements": {
-                "colorScheme": ["#0056A3", "#FF6B00", "#FFFFFF", "#F5F5F5", "#333333"],
-                "fonts": {
-                    "headings": "Inter Bold",
-                    "body": "Inter Regular"
-                },
-                "layout": "Четкая сетка с акцентами на важной информации"
-            },
-            "pages": [
-                "Обложка с логотипом МИРЭА и номером общежития",
-                "Приветствие от старшекурсников",
-                "Карта кампуса и 5-го общежития",
-                "Расписание работы столовой, медпункта, библиотеки",
-                "Чек-лист документов для заселения",
-                "Правила проживания в общежитии",
-                "Контакты кураторов и администрации",
-                "Полезные телефоны и экстренные службы"
-            ],
-            "specialFeatures": [
-                "QR-коды на важные ресурсы университета",
-                "Шаблоны заявлений и документов",
-                "Календарь академических событий",
-                "Советы по адаптации к студенческой жизни",
-                "Карта местности вокруг общежития",
-                "Чек-листы для первокурсника"
-            ],
-            "deliverables": [
-                "Figma файл с полным макетом методички",
-                "PDF версия для печати в типографии",
-                "Цифровая версия для рассылки",
-                "Отдельные графические элементы для соцсетей"
             ],
             "images": ["../images/project_2.jpg"],
             "liveDemo": "#",
@@ -117,62 +59,6 @@ function initProjectModals() {
                 "Поддержка 150+ мировых валют",
                 "История конвертаций и избранные валюты"
             ],
-            "architecture": {
-                "core": "C++17 с модульной архитектурой",
-                "ui": "Нативный WinAPI с кастомными контролами",
-                "data": "JSON API ЦБ РФ и ECB",
-                "build": "CMake для кроссплатформенной сборки"
-            },
-            "modules": [
-                {
-                    "name": "CurrencyCore",
-                    "description": "Ядро приложения с логикой конвертации"
-                },
-                {
-                    "name": "DataManager", 
-                    "description": "Менеджер данных с кэшированием и API"
-                },
-                {
-                    "name": "UIEngine",
-                    "description": "Движок интерфейса на WinAPI"
-                },
-                {
-                    "name": "SettingsManager",
-                    "description": "Управление настройками и историей"
-                }
-            ],
-            "uiComponents": [
-                "Главное окно с выбором валют",
-                "Поле ввода с валидацией",
-                "Выпадающие списки валют с поиском",
-                "Панель результатов с детализацией",
-                "Окно истории конвертаций",
-                "Настройки и обновление курсов"
-            ],
-            "technicalFeatures": [
-                "Многопоточная загрузка данных",
-                "Валидация ввода и обработка ошибок",
-                "Локализация (русский/английский)",
-                "Автообновление по расписанию",
-                "Резервные источники данных",
-                "Минимальное потребление ресурсов"
-            ],
-            "apis": [
-                {
-                    "name": "Центральный Банк РФ",
-                    "url": "https://www.cbr-xml-daily.ru/daily_json.js"
-                },
-                {
-                    "name": "European Central Bank", 
-                    "url": "https://api.exchangerate-api.com/v4/latest/USD"
-                }
-            ],
-            "buildInstructions": [
-                "Требуется C++17 компилятор",
-                "CMake 3.16+ для сборки",
-                "Windows SDK для WinAPI",
-                "Дополнительные либы: cURL, nlohmann/json"
-            ],
             "images": ["../images/project_3.jpg"],
             "liveDemo": "#",
             "sourceCode": "https://github.com/azaleat0101/currency-converter-cpp"
@@ -188,64 +74,6 @@ function initProjectModals() {
                 "Валидация форм обратной связи",
                 "Модальные окна с деталями проектов",
                 "Динамический учебный дневник"
-            ],
-            "pages": [
-                {
-                    "name": "Главная страница",
-                    "sections": ["Герой-секция", "Навыки с прогресс-барами", "Лучшие проекты", "Call-to-action"]
-                },
-                {
-                    "name": "Проекты", 
-                    "sections": ["Галерея проектов", "Фильтры по технологиям", "Модальные окна деталей", "Быстрая навигация"]
-                },
-                {
-                    "name": "Учебный дневник",
-                    "sections": ["Хронология обучения", "Прогресс по курсам", "Статистика достижений", "Интерактивные элементы"]
-                },
-                {
-                    "name": "Контакты",
-                    "sections": ["Форма обратной связи", "Валидация данных", "Способы связи", "Карта и контакты"]
-                }
-            ],
-            "technicalImplementation": {
-                "layout": "CSS Grid и Flexbox для адаптивности",
-                "animations": "CSS transitions и JavaScript",
-                "forms": "HTML5 валидация + кастомная JS валидация",
-                "navigation": "Single Page Application-like опыт",
-                "performance": "Оптимизированные изображения и код"
-            },
-            "designSystem": {
-                "colorPalette": ["#2563eb", "#64748b", "#1e293b", "#f8fafc", "#ffffff"],
-                "typography": {
-                    "headings": "Inter, sans-serif",
-                    "body": "Inter, sans-serif"
-                },
-                "components": ["Кнопки", "Карточки", "Навигация", "Формы", "Модальные окна"]
-            },
-            "javascriptFeatures": [
-                "Динамическая фильтрация контента",
-                "Управление модальными окнами",
-                "Валидация и обработка форм",
-                "Плавная прокрутка и навигация",
-                "Анимации при скролле",
-                "Интерактивные элементы интерфейса"
-            ],
-            "responsiveBreakpoints": [
-                "Mobile: < 768px",
-                "Tablet: 768px - 1024px", 
-                "Desktop: > 1024px"
-            ],
-            "browserSupport": [
-                "Chrome 60+",
-                "Firefox 55+",
-                "Safari 12+",
-                "Edge 79+"
-            ],
-            "performanceOptimizations": [
-                "Оптимизированные изображения WebP",
-                "Минифицированные CSS/JS",
-                "Ленивая загрузка контента",
-                "Эффективное использование кэша"
             ],
             "images": ["../images/project_4.jpg"],
             "liveDemo": "https://azaleat0101.github.io/for_frontend_2",
@@ -263,93 +91,50 @@ function initProjectModals() {
                 "Резервное копирование и восстановление базы данных",
                 "Многопользовательский режим с разными уровнями доступа"
             ],
-            "architecture": {
-                "frontend": "PySide6 (Qt для Python)",
-                "backend": "Python 3.9+ с psycopg2",
-                "database": "PostgreSQL 12+",
-                "reports": "Matplotlib + pandas для аналитики"
-            },
-            "modules": [
-                {
-                    "name": "DatabaseManager",
-                    "description": "Управление подключениями и выполнение SQL запросов"
-                },
-                {
-                    "name": "UIManager", 
-                    "description": "Построение интерфейса и обработка пользовательского ввода"
-                },
-                {
-                    "name": "DataVisualization",
-                    "description": "Генерация графиков и диаграмм"
-                },
-                {
-                    "name": "ReportGenerator",
-                    "description": "Создание отчетов в различных форматах"
-                },
-                {
-                    "name": "BackupManager",
-                    "description": "Резервное копирование и восстановление БД"
-                }
-            ],
-            "uiComponents": [
-                "Главное окно с навигационной панелью",
-                "Таблицы данных с сортировкой и фильтрацией",
-                "Формы для добавления и редактирования записей",
-                "Панель построителя запросов",
-                "Визуализация данных в реальном времени",
-                "Настройки подключения к базе данных"
-            ],
-            "databaseFeatures": [
-                "Поддержка нескольких схем базы данных",
-                "Транзакции с откатом изменений",
-                "Оптимизированные запросы с индексацией",
-                "Логирование всех операций",
-                "Валидация данных на стороне БД",
-                "Автоматическое обновление связанных данных"
-            ],
-            "technicalFeatures": [
-                "Многопоточные операции с базой данных",
-                "Кэширование часто запрашиваемых данных",
-                "Валидация ввода и обработка ошибок",
-                "Локализация интерфейса",
-                "Темное/светлое оформление",
-                "Горячие клавиши для быстрого доступа"
-            ],
-            "supportedOperations": [
-                "Создание и управление таблицами",
-                "Импорт/экспорт данных (CSV, JSON, Excel)",
-                "Выполнение произвольных SQL запросов",
-                "Построение сложных отчетов",
-                "Анализ производительности запросов",
-                "Управление пользователями и правами доступа"
-            ],
-            "systemRequirements": [
-                "Python 3.9 или выше",
-                "PostgreSQL 12+",
-                "Минимум 4GB оперативной памяти",
-                "100MB свободного места на диске",
-                "Windows 10/11, Linux или macOS"
-            ],
             "images": ["../images/project_5.jpg"],
             "liveDemo": "#",
             "sourceCode": "https://github.com/bergks/Database_project.git"
         }
     };
-    
-    // Обработчики для кнопок "Подробнее"
+
+    // Текущая активная кнопка (для возврата фокуса)
+    let activeButton = null;
+
+    // Инициализация кнопок
     viewDetailsButtons.forEach(button => {
+        // Устанавливаем начальные ARIA-атрибуты
+        button.setAttribute('aria-expanded', 'false');
+        button.setAttribute('aria-haspopup', 'dialog');
+        button.setAttribute('aria-controls', 'project-modal');
+        
+        // Обработчик клика
         button.addEventListener('click', function() {
             const projectId = this.getAttribute('data-project');
             const projectData = projectsData[projectId];
             
             if (projectData) {
-                showProjectModal(projectData);
+                showProjectModal(projectData, this);
+            }
+        });
+        
+        // Обработчик клавиатуры (Enter/Space)
+        button.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                const projectId = this.getAttribute('data-project');
+                const projectData = projectsData[projectId];
+                
+                if (projectData) {
+                    showProjectModal(projectData, this);
+                }
             }
         });
     });
     
-    // Закрытие модального окна
+    // Закрытие модального окна по клику на крестик
     modalClose.addEventListener('click', closeModal);
+    
+    // Закрытие по клику вне окна
     projectModal.addEventListener('click', function(e) {
         if (e.target === projectModal) {
             closeModal();
@@ -362,124 +147,229 @@ function initProjectModals() {
             closeModal();
         }
     });
-    
-    function showProjectModal(project) {
+
+    // Обработчики для кнопок внутри модального окна (демо и исходный код)
+    modalBody.addEventListener('click', function(e) {
+        if (e.target.classList.contains('button')) {
+            e.stopPropagation();
+        }
+    });
+
+    function showProjectModal(project, button) {
+        // Сохраняем активную кнопку для возврата фокуса
+        activeButton = button;
+        
+        // Обновляем ARIA-атрибуты кнопки
+        button.setAttribute('aria-expanded', 'true');
+        
+        // Генерируем контент модального окна
         modalBody.innerHTML = `
-            <div class="project-modal">
+            <div class="project-modal" role="document" aria-labelledby="project-modal-title" aria-modal="true">
                 <div class="project-modal__images">
-                    ${project.images.map(img => `<img src="${img}" alt="${project.title}">`).join('')}
+                    ${project.images.map(img => `
+                        <img src="${img}" alt="Скриншот проекта ${project.title}" loading="lazy">
+                    `).join('')}
                 </div>
                 <div class="project-modal__content">
-                    <h2>${project.title}</h2>
+                    <h2 id="project-modal-title">${project.title}</h2>
                     <p class="project-modal__description">${project.description}</p>
                     
                     <div class="project-modal__section">
                         <h3>Технологии</h3>
-                        <div class="tech-tags">
-                            ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                        <div class="tech-tags" role="list" aria-label="Использованные технологии">
+                            ${project.technologies.map(tech => `
+                                <span class="tech-tag" role="listitem">${tech}</span>
+                            `).join('')}
                         </div>
                     </div>
                     
                     <div class="project-modal__section">
                         <h3>Основные функции</h3>
-                        <ul class="features-list">
-                            ${project.features.map(feature => `<li>${feature}</li>`).join('')}
+                        <ul class="features-list" aria-label="Основные функции проекта">
+                            ${project.features.map(feature => `
+                                <li>${feature}</li>
+                            `).join('')}
                         </ul>
                     </div>
                     
                     <div class="project-modal__actions">
-                        ${project.liveDemo !== '#' ? `<a href="${project.liveDemo}" class="button button--primary" target="_blank">Демо</a>` : ''}
-                        ${project.sourceCode ? `<a href="${project.sourceCode}" class="button button--secondary" target="_blank">Исходный код</a>` : ''}
+                        ${project.liveDemo !== '#' ? `
+                            <a href="${project.liveDemo}" class="button button--primary" target="_blank" rel="noopener noreferrer">
+                                Демо
+                            </a>
+                        ` : ''}
+                        ${project.sourceCode ? `
+                            <a href="${project.sourceCode}" class="button button--secondary" target="_blank" rel="noopener noreferrer">
+                                Исходный код
+                            </a>
+                        ` : ''}
                     </div>
                 </div>
             </div>
         `;
         
+        // Показываем модальное окно
         projectModal.classList.add('active');
+        projectModal.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
+        
+        // Фокус на кнопку закрытия для скринридеров
+        const closeButton = projectModal.querySelector('.modal__close');
+        closeButton.focus();
+        
+        // Активируем ловушку фокуса
+        trapFocus(projectModal);
     }
     
     function closeModal() {
         projectModal.classList.remove('active');
+        projectModal.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = 'auto';
-    }
-}
-
-// Стили для модального окна проектов
-const modalStyles = document.createElement('style');
-modalStyles.textContent = `
-    .project-modal {
-        display: grid;
-        gap: 2rem;
-    }
-    
-    .project-modal__images img {
-        width: 100%;
-        border-radius: var(--border-radius);
-        box-shadow: var(--shadow);
-    }
-    
-    .project-modal__content h2 {
-        color: var(--text-primary);
-        margin-bottom: 1rem;
-    }
-    
-    .project-modal__description {
-        color: var(--text-secondary);
-        line-height: 1.6;
-        margin-bottom: 1.5rem;
-    }
-    
-    .project-modal__section {
-        margin-bottom: 1.5rem;
-    }
-    
-    .project-modal__section h3 {
-        font-size: 1.125rem;
-        margin-bottom: 0.75rem;
-        color: var(--text-primary);
-    }
-    
-    .tech-tags {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-    }
-    
-    .features-list {
-        list-style: none;
-        padding: 0;
-    }
-    
-    .features-list li {
-        padding: 0.5rem 0;
-        border-bottom: 1px solid var(--border-color);
-        position: relative;
-        padding-left: 1.5rem;
-    }
-    
-    .features-list li:before {
-        content: '✓';
-        position: absolute;
-        left: 0;
-        color: var(--success-color);
-        font-weight: bold;
-    }
-    
-    .features-list li:last-child {
-        border-bottom: none;
-    }
-    
-    .project-modal__actions {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
-    
-    @media (min-width: 768px) {
-        .project-modal {
-            grid-template-columns: 1fr 1fr;
+        
+        // Возвращаем фокус на кнопку, которая открывала модальное окно
+        if (activeButton) {
+            activeButton.setAttribute('aria-expanded', 'false');
+            activeButton.focus();
+            activeButton = null;
         }
     }
-`;
-document.head.appendChild(modalStyles);
+
+    function trapFocus(modal) {
+        const focusableElements = modal.querySelectorAll(
+            'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+        );
+        
+        if (focusableElements.length === 0) return;
+        
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+
+        function handleKeydown(e) {
+            if (e.key !== 'Tab') return;
+            
+            if (e.shiftKey) {
+                // Shift + Tab
+                if (document.activeElement === firstElement) {
+                    e.preventDefault();
+                    lastElement.focus();
+                }
+            } else {
+                // Tab
+                if (document.activeElement === lastElement) {
+                    e.preventDefault();
+                    firstElement.focus();
+                }
+            }
+        }
+
+        // Добавляем обработчик
+        modal.addEventListener('keydown', handleKeydown);
+        
+        // Функция для очистки
+        return () => {
+            modal.removeEventListener('keydown', handleKeydown);
+        };
+    }
+
+    // Добавляем стили для модального окна проектов
+    addModalStyles();
+}
+
+function addModalStyles() {
+    if (document.getElementById('modal-styles')) return;
+    
+    const modalStyles = document.createElement('style');
+    modalStyles.id = 'modal-styles';
+    modalStyles.textContent = `
+        .project-modal {
+            display: grid;
+            gap: 2rem;
+        }
+        
+        .project-modal__images img {
+            width: 100%;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            height: auto;
+        }
+        
+        .project-modal__content h2 {
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+        
+        .project-modal__description {
+            color: var(--text-secondary);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-modal__section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-modal__section h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-primary);
+        }
+        
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .features-list li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+        
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .project-modal__actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .project-modal__actions .button {
+            min-width: 120px;
+        }
+        
+        @media (max-width: 767px) {
+            .project-modal__actions {
+                flex-direction: column;
+            }
+            
+            .project-modal__actions .button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .project-modal {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    `;
+    document.head.appendChild(modalStyles);
+}

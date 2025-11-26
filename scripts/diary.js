@@ -48,14 +48,15 @@ function showStubModal() {
     const stubModal = document.getElementById('stub-modal');
     if (stubModal) {
         stubModal.classList.add('active');
+        stubModal.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
         
-        // Добавляем небольшой эффект для кнопки
-        const stubButton = document.getElementById('add-entry-stub-btn');
-        stubButton.style.transform = 'scale(0.95)';
-        setTimeout(() => {
-            stubButton.style.transform = 'scale(1)';
-        }, 150);
+        // Фокус на кнопку закрытия
+        const closeButton = stubModal.querySelector('#stub-modal-close');
+        closeButton.focus();
+        
+        // Ловушка фокуса
+        trapFocus(stubModal);
     }
 }
 
@@ -63,7 +64,12 @@ function closeStubModal() {
     const stubModal = document.getElementById('stub-modal');
     if (stubModal) {
         stubModal.classList.remove('active');
+        stubModal.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = 'auto';
+        
+        // Возвращаем фокус на кнопку, которая открывала модальное окно
+        const stubButton = document.getElementById('add-entry-stub-btn');
+        stubButton.focus();
     }
 }
 

@@ -54,6 +54,10 @@ function validateField(field) {
     // Очищаем предыдущую ошибку
     clearError(field);
     
+    // Сбрасываем ARIA-атрибуты
+    field.removeAttribute('aria-invalid');
+    field.removeAttribute('aria-describedby');
+    
     // Проверка на обязательное поле
     if (field.hasAttribute('required') && !value) {
         showError(field, 'Это поле обязательно для заполнения');
@@ -80,17 +84,25 @@ function validateField(field) {
 
 function showError(field, message) {
     field.style.borderColor = 'var(--error-color)';
+    field.setAttribute('aria-invalid', 'true');
+    field.setAttribute('aria-describedby', field.name + '-error');
+    
     const errorElement = document.getElementById(field.name + '-error');
     if (errorElement) {
         errorElement.textContent = message;
+        errorElement.setAttribute('role', 'alert');
     }
 }
 
 function clearError(field) {
     field.style.borderColor = '';
+    field.removeAttribute('aria-invalid');
+    field.removeAttribute('aria-describedby');
+    
     const errorElement = document.getElementById(field.name + '-error');
     if (errorElement) {
         errorElement.textContent = '';
+        errorElement.removeAttribute('role');
     }
 }
 
